@@ -12917,7 +12917,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-As yes can see from previous metrics visualization for chosen models, SVM is very slow in prediction and training bside that some time close or less than Logistic Regression, so we'll exclude it from this selection, for Gaussian Naive Bayes and Logistic Regression, model prediction and training almost same, when we compare in fbeta socre and accuracy score it's clear that Logistic Regression outperforms Naive Bayes, So Based on the evaluation I'll choose Logistic Regression.</p>
+As yes can see from previous metrics visualization for chosen models, SVM is very slow in prediction and training bside that some time close or less than Logistic Regression, so we'll exclude it from this selection, for Gaussian Naive Bayes and Logistic Regression, model prediction and training almost same, when we compare in fbeta socre and accuracy score it's clear that Logistic Regression outperforms Naive Bayes, So Based on the evaluation I'll choose Logistic Regression, Logistic regression deals with situations in which the observed outcome for a dependent variable can have only two possible types, "0" and "1", So its work effectively with with Binary Output Variable as we need to find the people with income more than 50K because that we can say the algorithm suitable for the data.</p>
 
 </div>
 </div>
@@ -12940,7 +12940,8 @@ As yes can see from previous metrics visualization for chosen models, SVM is ver
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> 
-Logistic Regression is a regression analysis, used when the dependent variable has two label, Logistic Regression can be predictive analysis and it's predicts the probability of an outcome that can only have two values, The prediction is based on the use of one or several predictors, On the other hand, a logistic regression produces a logistic curve, which is limited to values between 0 and 1.</p>
+let's talk about Logistic Regression in simple words, Logistic is an algorithm used when the output or what we call it sometimes dependent variable has two type such as true or false, 1 or 0, we call these types labels, As you can know we have a data and we want to find whether the persons on this data has more than 50K income or not, So we have two labels, more than 50K, equal or less than 50K, this type of problem we name it classification problem as you classify an object as either belonging in a group(more than 50K) or not, Ok great, How we classifay this data to two labels based on what? simply we see our data and find what columns that matter and we call it independent variable, So as with our data we can see there is a workclass column, and we know this column mean that the person has a job or not, so based on that we can assum that the person with a job probably gain more than 50K, so we add many independent variables like this, independent variable that we think it's matter, Ok now we know that the person with this features  ( has work, and other independent variable that we think it's matter..) probably gain more than 50K, we make our prediction, after that we can test or result with test data we did not use it when we spicify our features, and we find if we our prediction match true value of not, after that we know if our model (Logistic Regression model) work well or not, if not we can spicify another features and test again.</p>
+<p><a href="https://www.quora.com/What-is-logistic-regression">What is logistic regression?</a></p>
 <p><a href="http://www.saedsayad.com/logistic_regression.htm">Logistic Regression</a></p>
 <p><a href="https://www.statisticssolutions.com/what-is-logistic-regression/">What is Logistic Regression?</a></p>
 
@@ -13143,11 +13144,11 @@ Final F-score on the testing data: 0.6842
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
 The importance in order</p>
-<p>workclass: It's the most important Feature to know what donor work</p>
-<p>occupation: tells you the type of a donoer work.</p>
-<p>education: tells you the education of a donoer.</p>
-<p>hours-per-week: You can multyplay houres per salry and find the total income.</p>
-<p>native-country: I think if you are a citizen you gain more.</p>
+<p>workclass: It's the most important Feature to know what donor work, we predicted based on that if the person makes money, With someone without work we can expect he can donate</p>
+<p>occupation: tells you the type of a donor work, then we can predict based on the type if someone makes enough to donate or not.</p>
+<p>education: tells you the education of a donor, normally high education level high income, So we expect if someone with high education level can be our selection</p>
+<p>hours-per-week: You can multiply hours per salary and find the total income, how that be good? as someone has more hours-per-week as he makes more money and can be a donor.</p>
+<p>native-country: I think if you are a citizen you gain more, gain more mean you have the capability to donate</p>
 
 </div>
 </div>
